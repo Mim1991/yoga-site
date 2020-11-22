@@ -5,7 +5,8 @@
 <%= @yogclass.date %>
 <%= @yogclass.time %>
 <%= @yogclass.address %>
+<p>space: <%= @yogclass.capacity%> </p>
 
-<%= render "form", yogclass: @yogclass, booking: @booking %>
+<%= render "bookings/form", yogclass: @yogclass, booking: @booking %>
 
 
