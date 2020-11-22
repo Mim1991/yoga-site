@@ -1,0 +1,9 @@
+<% @classes.each do |yogclass| %>
+<div class="yoga-class-card">
+<%= yogclass.name %>
+<%= yogclass.description %>
+<%= yogclass.price %>
+<%= yogclass.date %>
+<%= link_to "Read More", yoga_class_path(yogclass)  %>
+</div>
+<% end %>
