@@ -21,6 +21,14 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'autoprefixer-rails' #automatic works for firefox, IE etc
+gem 'font-awesome-sass', '~> 5.6.1' #font awesome library
+gem 'simple_form' #forms from bootstrap, need to have bootstrap installed
+gem 'dotenv-rails', groups: [:development, :test] #for env keys cloudinary
+gem 'cloudinary', '~> 1.16.0' #images
+gem 'devise' #sign up and log ins
+gem 'pundit' #authorization
+gem 'geocoder' #adds a map
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
