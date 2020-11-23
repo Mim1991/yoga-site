@@ -1,8 +1,10 @@
 <h1>Your profile</h1>
+<p><%= @user.yoga_classes.count%> </p>
 <% @user.yoga_classes.each do |yogclass| %>
  <p> <%= link_to yogclass.name, yoga_class_path(yogclass.id) %></p>
+ <p><%= yogclass.date %> </p>
+<%= link_to "Unbook", yoga_class_booking_path(yogclass, yogclass.bookings.where(user: current_user).first),
+    method: :delete, data:{ confirm: 'You sure?' },
+    class: "btn btn-primary" %>
 <% end  %>
 
-  <% @user.bookings.each do |booking| %>
-    <%= booking.date %>
-  <% end %>

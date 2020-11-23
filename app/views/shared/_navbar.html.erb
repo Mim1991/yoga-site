@@ -10,3 +10,7 @@
   <%= link_to "Sign Up", new_user_registration_path %>
   <%= link_to "Log In", new_user_session_path  %>
 <% end %>
+<% if user_signed_in? && current_user.email == "meehir_patel@hotmail.co.uk" %>
+  <%= link_to "Add A New Class" , new_yoga_class_path %>
+<% else %>
+<% end %>
