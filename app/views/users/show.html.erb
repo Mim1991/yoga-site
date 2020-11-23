@@ -1,2 +1,8 @@
 <h1>Your profile</h1>
-<% @user.yoga_class %>
+<% @user.yoga_classes.each do |yogclass| %>
+ <p> <%= link_to yogclass.name, yoga_class_path(yogclass.id) %></p>
+<% end  %>
+
+  <% @user.bookings.each do |booking| %>
+    <%= booking.date %>
+  <% end %>

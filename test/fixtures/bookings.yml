@@ -1,13 +1,9 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  people: 1
-  status: MyString
-  users: one
-  yoga_classes: one
+  user: one
+  yoga_class: one
 
 two:
-  people: 1
-  status: MyString
-  users: two
-  yoga_classes: two
+  user: two
+  yoga_class: two

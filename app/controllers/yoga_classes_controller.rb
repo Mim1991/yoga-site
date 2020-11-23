@@ -1,8 +1,11 @@
 class YogaClassesController < ApplicationController
   def index
+    @classes = YogaClass.all
   end
 
   def show
+    @yogclass = YogaClass.find(params[:id])
+    @booking = Booking.new
   end
 
   def new

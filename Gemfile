@@ -29,6 +29,7 @@ gem 'cloudinary', '~> 1.16.0' #images
 gem 'devise' #sign up and log ins
 gem 'pundit' #authorization
 gem 'geocoder' #adds a map
+gem 'faker'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

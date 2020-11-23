@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
   get 'about', to: 'pages#about'
+  get 'blog', to: 'pages#blog'
 
   resources :yoga_classes do
     resources :bookings, only: [:new, :create, :edit, :update, :destroy]

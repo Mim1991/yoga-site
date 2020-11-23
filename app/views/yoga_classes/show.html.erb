@@ -5,8 +5,10 @@
 <%= @yogclass.date %>
 <%= @yogclass.time %>
 <%= @yogclass.address %>
-<p>space: <%= @yogclass.capacity%> </p>
+<% spaces = @yogclass.capacity - @yogclass.bookings.count %>
+<p>space: <%= @yogclass.capacity - @yogclass.bookings.count%> </p>
 
+<% if spaces > 0 %>
 <%= render "bookings/form", yogclass: @yogclass, booking: @booking %>
-
+<% end %>
 
